@@ -1,4 +1,4 @@
-# GPT-3-prompt-cropper
+# GPT-3 prompt cropper
 Crops the string in your clipboard to exactly 2048 tokens.
 
 ```encoder.py``` is from the official [GPT-2 implementation](https://github.com/openai/gpt-2).
