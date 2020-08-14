@@ -9,8 +9,6 @@ model_dir = os.path.join(dir_path, 'models')
 enc = get_encoder('124M', model_dir)
 
 def crop_prompt(prompt: str):
-    global enc
-
     cropped_prompt = enc.decode(enc.encode(prompt)[:2048])
     return cropped_prompt
 
