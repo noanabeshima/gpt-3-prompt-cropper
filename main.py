@@ -15,5 +15,5 @@ def main():
     prompt = crop_prompt(pyperclip.paste())
     pyperclip.copy(''.join(prompt))
 
-if name == '__main__':
+if __name__ == '__main__':
     main()
