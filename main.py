@@ -2,7 +2,10 @@ from encoder import get_encoder
 import os
 import pyperclip
 
-model_dir = os.path.join(os.getcwd(), 'models')
+# To get the full path of a directory
+# https://stackoverflow.com/questions/5137497/find-current-directory-and-files-directory
+dir_path = os.path.dirname(os.path.realpath(__file__))
+model_dir = os.path.join(dir_path, 'models')
 enc = get_encoder('124M', model_dir)
 
 def crop_prompt(prompt: str):
